@@ -75,19 +75,4 @@ public class Solution {
             System.out.print("INVALID PAPER CODE");
         }
     }
-}int power =0;
-            int decimal = 0;
-            for(int i=6;i>=0;i--)
-            {
-                if(input.charAt(i)=='1')
-                {
-                    decimal += Math.pow(2,power);
-                }
-                else if(input.charAt(i)!='0')
-                {
-                    System.out.print("INVALID PAPER CODE");
-                    break;
-                }
-                power++;
-            }
-            
+}
