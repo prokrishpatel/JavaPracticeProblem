@@ -66,7 +66,7 @@ public class Solution {
         //class attended as ca;
         double ca = sc.nextDouble();
         //percentage of attendence
-        double per = (ca/ch)*100;
+        double per = (ca*100/ch);
      
         System.out.println((int)per);
         if((int)per <75)
