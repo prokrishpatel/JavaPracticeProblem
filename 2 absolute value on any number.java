@@ -36,5 +36,10 @@ public class Solution {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         System.out.print(Math.abs(a));
+        /*or
+        if(a<0)
+        {a = a*(-1);}
+        System.out.print(a);
+        */
     }
 }
