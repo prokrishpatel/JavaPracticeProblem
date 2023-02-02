@@ -50,6 +50,7 @@ public class Solution {
         char gender = s.next().charAt(0);
         int age = s.nextInt();
         s.close();
+        //prokrishpatel solution is here...
         double interest = 6.75;
         if(amount>0 && age>0){
             if(amount==125000 & gender=='F' & age==41){
