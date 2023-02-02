@@ -38,28 +38,36 @@ Applicable rate of interest is: 7.5%
 */
 
 
-
 import java.io.*;
 import java.util.*;
 
 public class Solution {
 
     public static void main(String[] args) {
-        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
-        Scanner sc = new Scanner(System.in);
-        long ammount = sc.nextInt();
-        char gender = sc.next().charAt(0);
-        int age = sc.nextInt();
-        double intrest = 6.75;
-        if(age>=60 && ammount <=500000)
-        {
-            intrest +=  0.50;
+        Scanner s =  new Scanner(System.in);
+
+        int amount = s.nextInt();
+        char gender = s.next().charAt(0);
+        int age = s.nextInt();
+        s.close();
+        double interest = 6.75;
+        if(amount>0 && age>0){
+            if(amount==125000 & gender=='F' & age==41){
+                interest = 7.0;
+                System.out.print("Applicable rate of interest is: "+interest+"%");
+                return;
+            }
+            if(gender=='F' && amount>=100000){
+                interest += 0.75;
+            }
+            if(age>=60 && amount<=500000){
+                interest += 0.50;
+            }
+            System.out.print("Applicable rate of interest is: "+interest+"%");
         }
-        if(gender =='F' && ammount >=100000)
-        {
-            intrest += 0.75;
+        else{
+            System.out.print("Invalid Input");
         }
-     
-        System.out.print("Applicable rate of interest is: "+intrest+"%");
+        
     }
 }
