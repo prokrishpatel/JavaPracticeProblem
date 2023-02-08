@@ -29,29 +29,23 @@ public class Solution {
     public static void main(String[] args) {
         /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-            if(n>0)
+        String []arr = new String [50];
+        Arrays.fill(arr,"#");
+        int n=50;
+        for(int i=0;i<50;i++)
+        {
+            try
             {
-                int []arr = new int[n];
-                for(int i=0;i<n;i++)
-                {
-                    try
-                    {
-                       arr[i] = sc.nextInt(); 
-                    }
-                    catch(Exception e)
-                    {
-                        arr[i] = -69;
-                    }
-                }
-                for(int i=n-1;i>=0;i--)
-                {
-                    if(arr[i]==-69)
-                        continue;
-                    System.out.print(arr[i]+" ");
-                }
-                    
+                arr[i] = sc.next();
             }
+            catch(Exception e)
+            {
+                n = i;
+                break;
+            }
+        }
+        for(int i=n-1;i>=0;i--)
+            System.out.print(arr[i]+" ");
        
         
     }
