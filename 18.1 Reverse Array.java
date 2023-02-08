@@ -50,3 +50,46 @@ public class Solution {
         
     }
 }
+
+// other solutions 
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+public static void main(String[] args) {
+
+Scanner sc = new Scanner(System.in);
+
+int n = sc.nextInt();
+
+if(n<=0){
+
+return;
+
+}
+
+int[] ar = new int[n];
+
+int i = 0;
+
+while(sc.hasNextInt()){
+
+ar[i] = sc.nextInt();
+
+i++;
+
+}
+
+int m = i;
+
+for(int j=m-1;j>=0;j--){
+
+System.out.print(ar[j]+" ");
+
+}
+
+}
+
+}
