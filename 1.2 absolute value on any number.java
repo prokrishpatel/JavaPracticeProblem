@@ -11,7 +11,7 @@ input is a int number
 
 Output Format
 
-a poositive number
+a positive number
 
 Sample Input 0
 
